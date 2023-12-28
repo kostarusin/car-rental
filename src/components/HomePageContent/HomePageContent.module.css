@@ -1,0 +1,22 @@
+.HomePageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.HomePageTitle {
+  color: black;
+}
+
+.HomePageLink {
+  color: var(--blue);
+
+  &:hover,
+  &:focus {
+    color: var(--blueHover);
+    text-shadow: 0 0 5px #00baff, 0 0 10px #00baff, 0 0 20px #00baff,
+      0 0 40px #00baff, 0 0 80px #00baff;
+  }
+}

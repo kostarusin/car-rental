@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 32px;
 }
 
 .link {
@@ -9,12 +10,12 @@
   color: #8a8a89;
   /* text-shadow: 0 0 5px #00baff, 0 0 10px #00baff, 0 0 20px #00baff,
     0 0 40px #00baff, 0 0 80px #00baff; */
-  transition: color 0.3s, text-shadow 0.3s;
+  transition: var(--trans);
 
   &:hover,
   &:focus {
-    color: #3470ff;
-    /* text-shadow: 0 0 5px #00baff, 0 0 10px #00baff, 0 0 20px #00baff,
-      0 0 40px #00baff, 0 0 80px #00baff; */
+    color: var(--blueHover);
+    text-shadow: 0 0 5px #00baff, 0 0 10px #00baff, 0 0 20px #00baff,
+      0 0 40px #00baff, 0 0 80px #00baff;
   }
 }
