@@ -1,0 +1,70 @@
+.cardWrapper {
+  height: 426px;
+  width: 274px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carDataWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carImage {
+  border-radius: 14px;
+  object-fit: cover;
+  width: 274px;
+  height: 268px;
+}
+
+.carDataWrapper {
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+
+.carMainInfo {
+  color: var(--black);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.carModel {
+  color: var(--blue);
+}
+
+.info {
+  display: flex;
+  width: 270px;
+  height: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  color: var(--liteGray);
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.button {
+  color: var(--white);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  display: flex;
+  width: 100%;
+  height: 44px;
+  padding: 12px 99px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: none;
+  background: var(--blue);
+}

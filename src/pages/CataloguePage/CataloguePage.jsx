@@ -1,7 +1,8 @@
 import React from "react";
+import CataloguePageContent from "../../components/CataloguePageContent/CataloguePageContent";
 
 const CataloguePage = () => {
-  return <div></div>;
+  return <CataloguePageContent />;
 };
 
 export default CataloguePage;

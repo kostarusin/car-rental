@@ -1,4 +1,7 @@
 .headerWrapper {
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
   padding-right: 32px;
   padding-left: 32px;
   padding-top: 20px;

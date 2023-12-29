@@ -2,9 +2,11 @@
   /* --container-width: 100%; */
 
   --white: #ffffff;
-  --blue: #0b44cd;
-  --blueHover: #3470ff;
+  --black: #121417
+  --blueHover: #0b44cd;
+  --blue: #3470ff;
   --gray: #8a8a89;
+  --liteGray: rgba(18, 20, 23, 0.5);
   --trans: color 300ms;
 }
 

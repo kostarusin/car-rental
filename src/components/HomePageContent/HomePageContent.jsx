@@ -10,7 +10,7 @@ const HomePageContent = () => {
         The easiest way to rent a car in Ukraine!
       </h2>
       <Link className={style.HomePageLink} to="/catalogue">
-        Follow for more
+        Learn more
       </Link>
     </div>
   );

@@ -1,0 +1,11 @@
+.catalogueWrapper {
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 30px;
+}
