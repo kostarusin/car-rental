@@ -4,10 +4,12 @@ import CataloguePage from "../../pages/CataloguePage/CataloguePage";
 import FavoritePage from "../../pages/FavoritePage/FavoritePage";
 import ErrorPage from "../../pages/ErrorPage/ErrorPage";
 import SharedLayout from "../SharedLayout/SharedLayout";
+import ModalWindow from "../ModalWindow/ModalWindow";
 
 function App() {
   return (
     <div>
+      <ModalWindow />
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />

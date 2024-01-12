@@ -4,11 +4,10 @@
   padding-top: 20px;
   padding-right: 32px;
   padding-left: 32px;
-  background-image: url(D:\kostaGithubProjects\car-rental\src\assets\backgroundImage.jpg);
+  background-image: url(/Users/kostarusin/Documents/projects/car-rental/src/assets/backgroundImage.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   display: flex;
   justify-content: center;
   align-items: start;
