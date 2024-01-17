@@ -2,10 +2,11 @@
   /* --container-width: 100%; */
 
   --white: #ffffff;
-  --black: #121417
+  --black: #121417;
   --blueHover: #0b44cd;
   --blue: #3470ff;
   --gray: #8a8a89;
+  --inputBackground: #f7f7fb;
   --liteGray: rgba(18, 20, 23, 0.5);
   --trans: color 300ms;
 }

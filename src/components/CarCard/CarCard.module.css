@@ -67,4 +67,10 @@
   border-radius: 12px;
   border: none;
   background: var(--blue);
+
+  &:hover,
+  &:focus {
+    /* color: var(--blueHover); */
+    background-color: var(--blueHover);
+  }
 }

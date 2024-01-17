@@ -1,0 +1,62 @@
+.form {
+  display: flex;
+  min-width: 860px;
+  margin: auto;
+  gap: 18px;
+  align-items: flex-end;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 8px;
+  color: var(--gray);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.brandInp {
+  min-width: 224px;
+  height: 48px;
+  padding: 0px;
+  border: none;
+  background-color: var(--inputBackground);
+  border-radius: 14px;
+}
+
+.priceInp {
+  min-width: 224px;
+  height: 48px;
+  padding: 0px;
+  border: none;
+  background-color: var(--inputBackground);
+  border-radius: 14px;
+}
+
+.mileageInp {
+  min-width: 320px;
+  height: 48px;
+  padding: 0px;
+  border: none;
+  background-color: var(--inputBackground);
+  border-radius: 14px;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  display: block;
+  min-width: 136px;
+  height: 48px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
