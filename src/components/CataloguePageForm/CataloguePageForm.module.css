@@ -28,6 +28,10 @@
   background-color: var(--inputBackground);
   border-radius: 14px;
   color: var(--black);
+  padding-left: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .priceInp {
@@ -37,6 +41,10 @@
   border: none;
   background-color: var(--inputBackground);
   border-radius: 14px;
+  padding-left: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .mileageInpFrom {
@@ -49,15 +57,12 @@
   border-right-color: black;
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
-}
-
-::placeholder {
   padding-left: 18px;
-  color: var(--black);
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
 }
+
 .mileageInpTo {
   min-width: 160px;
   height: 48px;
@@ -66,6 +71,14 @@
   background-color: var(--inputBackground);
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
+  padding-left: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+::placeholder {
+  color: var(--black);
 }
 
 .button {
