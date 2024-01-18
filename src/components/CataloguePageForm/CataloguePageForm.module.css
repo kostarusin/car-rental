@@ -32,6 +32,11 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 }
 
 .priceInp {
@@ -45,6 +50,11 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 }
 
 .mileageInpFrom {
@@ -53,14 +63,19 @@
   padding: 0px;
   border: none;
   background-color: var(--inputBackground);
-  border-right: 2px;
-  border-right-color: black;
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
-  padding-left: 18px;
+  padding-left: 24px;
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
+
+  border-right: 1px solid rgba(138, 138, 137, 0.2);
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 }
 
 .mileageInpTo {
@@ -71,10 +86,15 @@
   background-color: var(--inputBackground);
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
-  padding-left: 18px;
+  padding-left: 24px;
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 }
 
 ::placeholder {
