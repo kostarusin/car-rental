@@ -65,12 +65,11 @@
   background-color: var(--inputBackground);
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
+  border-right: 1px solid rgba(138, 138, 137, 0.2);
   padding-left: 24px;
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
-
-  border-right: 1px solid rgba(138, 138, 137, 0.2);
 
   &:hover,
   &:focus {
@@ -111,7 +110,11 @@
   background-color: var(--blue);
   color: var(--white);
   border: none;
-
   border-radius: 12px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--blueHover);
+  }
 }

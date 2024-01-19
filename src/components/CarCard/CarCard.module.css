@@ -70,7 +70,6 @@
 
   &:hover,
   &:focus {
-    /* color: var(--blueHover); */
     background-color: var(--blueHover);
   }
 }

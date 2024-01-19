@@ -28,7 +28,7 @@ const CarCard = () => {
         ]);
 
         return (
-          <div key={id} className={style.cardWrapper}>
+          <li key={id} className={style.cardWrapper}>
             <div>
               <img
                 src={car.img ? car.img : defaultImage}
@@ -49,7 +49,7 @@ const CarCard = () => {
             <button type="button" className={style.button}>
               Learn more
             </button>
-          </div>
+          </li>
         );
       })}
     </>

@@ -5,14 +5,14 @@ import CataloguePageForm from "../CataloguePageForm/CataloguePageForm";
 
 const CataloguePageContent = () => {
   return (
-    <div className={style.catalogueWrapper}>
+    <section className={style.catalogueWrapper}>
       <div className={style.form}>
         <CataloguePageForm />
       </div>
-      <div className={style.carCards}>
+      <ul className={style.carCards}>
         <CarCard />
-      </div>
-    </div>
+      </ul>
+    </section>
   );
 };
 

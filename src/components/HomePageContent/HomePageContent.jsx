@@ -4,7 +4,7 @@ import style from "./HomePageContent.module.css";
 
 const HomePageContent = () => {
   return (
-    <div className={style.HomePageWrapper}>
+    <section className={style.HomePageWrapper}>
       <h1 className={style.HomePageTitle}>RentUa</h1>
       <h2 className={style.HomePageTitle}>
         The easiest way to rent a car in Ukraine!
@@ -12,7 +12,7 @@ const HomePageContent = () => {
       <Link className={style.HomePageLink} to="/catalogue">
         Learn more
       </Link>
-    </div>
+    </section>
   );
 };
 
