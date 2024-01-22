@@ -1,10 +1,8 @@
 import React from "react";
 import style from "./CarCard.module.css";
-import data from "../../assets/advertsCars.json";
-// import image from "../../assets/carimg.jpg";
 
-const CarCard = () => {
-  const carInfoList = data;
+const CarCard = ({ carInfoList }) => {
+  console.log(carInfoList);
   const defaultImage =
     "https://hips.hearstapps.com/hmg-prod/images/2023-buick-enclave-avenir-101-1664481893.jpg?crop=0.764xw:0.748xh;0.0912xw,0.193xh&resize=1200:*";
 
@@ -28,7 +26,7 @@ const CarCard = () => {
         ]);
 
         return (
-          <li key={id} className={style.cardWrapper}>
+          <div key={id} className={style.cardWrapper}>
             <div>
               <img
                 src={car.img ? car.img : defaultImage}
@@ -49,7 +47,7 @@ const CarCard = () => {
             <button type="button" className={style.button}>
               Learn more
             </button>
-          </li>
+          </div>
         );
       })}
     </>

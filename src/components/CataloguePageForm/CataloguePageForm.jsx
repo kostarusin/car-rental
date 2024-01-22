@@ -6,7 +6,7 @@ const CataloguePageForm = () => {
     <>
       <form className={style.form}>
         <div className={style.inputWrapper}>
-          <label className={style.label} for="brand">
+          <label className={style.label} htmlFor="brand">
             Car brand
           </label>
           <input
@@ -25,7 +25,7 @@ const CataloguePageForm = () => {
           </datalist> */}
         </div>
         <div className={style.inputWrapper}>
-          <label className={style.label} for="price">
+          <label className={style.label} htmlFor="price">
             Price / 1 hour
           </label>
           <input
@@ -36,7 +36,7 @@ const CataloguePageForm = () => {
           />
         </div>
         <div className={style.inputWrapper}>
-          <label className={style.label} for="mileage">
+          <label className={style.label} htmlFor="mileage">
             Car mileage / km
           </label>
           <div>

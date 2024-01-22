@@ -7,11 +7,11 @@ import App from "./components/App/App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <StyledEngineProvider injectFirst>
-      <BrowserRouter basename="/car-rental">
-        <App />
-      </BrowserRouter>
-    </StyledEngineProvider>
-  </React.StrictMode>
+  // <React.StrictMode>
+  <StyledEngineProvider injectFirst>
+    <BrowserRouter basename="/car-rental">
+      <App />
+    </BrowserRouter>
+  </StyledEngineProvider>
+  // </React.StrictMode>
 );
