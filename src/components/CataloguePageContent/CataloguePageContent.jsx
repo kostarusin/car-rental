@@ -51,7 +51,7 @@ const CataloguePageContent = () => {
       <ul className={style.carCards}>
         <CarCard carInfoList={carData} />
       </ul>
-      {hasMore && (
+      {loadMoreBtn && (
         <button type="button" onClick={onLoadMore}>
           Load more
         </button>
