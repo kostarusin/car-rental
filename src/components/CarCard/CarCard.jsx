@@ -2,7 +2,6 @@ import React from "react";
 import style from "./CarCard.module.css";
 
 const CarCard = ({ carInfoList }) => {
-  console.log(carInfoList);
   const defaultImage =
     "https://hips.hearstapps.com/hmg-prod/images/2023-buick-enclave-avenir-101-1664481893.jpg?crop=0.764xw:0.748xh;0.0912xw,0.193xh&resize=1200:*";
 

@@ -1,28 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import CarCard from "../CarCard/CarCard";
 import style from "./CataloguePageContent.module.css";
 import CataloguePageForm from "../CataloguePageForm/CataloguePageForm";
 
+const API_ENDPOINT = "https://65aebd161dfbae409a75777f.mockapi.io/adverts/";
+
 const CataloguePageContent = () => {
-  const [currentPage, setCurrentPage] = useState(1);
+  const [paginationPage, setPaginationPage] = useState(1);
   const [carData, setCarData] = useState([]);
   const [loadMoreBtn, setLoadMoreBtn] = useState(true);
+  const url = `${API_ENDPOINT}?page=${paginationPage}&limit=12`;
+  const isInitialMount = useRef(true);
 
-  console.log(currentPage);
+  console.log(url);
 
   useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
+
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          "https://65aebd161dfbae409a75777f.mockapi.io/adverts/",
-          {
-            params: {
-              page: currentPage,
-              limit: 12,
-            },
-          }
-        );
+        const response = await axios.get(url);
 
         const newData = response.data;
 
@@ -37,10 +38,10 @@ const CataloguePageContent = () => {
     };
 
     fetchData();
-  }, [currentPage]);
+  }, [paginationPage]);
 
   const onLoadMore = () => {
-    setCurrentPage((prevState) => prevState + 1);
+    setPaginationPage((prevState) => prevState + 1);
   };
 
   return (
@@ -52,7 +53,7 @@ const CataloguePageContent = () => {
         <CarCard carInfoList={carData} />
       </ul>
       {loadMoreBtn && (
-        <button type="button" onClick={onLoadMore}>
+        <button type="button" className={style.button} onClick={onLoadMore}>
           Load more
         </button>
       )}
