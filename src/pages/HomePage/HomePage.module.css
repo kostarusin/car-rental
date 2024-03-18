@@ -4,7 +4,8 @@
   padding-top: 20px;
   padding-right: 32px;
   padding-left: 32px;
-  background-image: url(/Users/kostarusin/Documents/projects/car-rental/src/assets/backgroundImage.jpg);
+  /* background-image: url(/Users/kostarusin/Documents/projects/car-rental/src/assets/backgroundImage.jpg); */
+  background-image: url("https://cdn.luxe.digital/media/20230105112527/fastest-cars-world-hennessey-venom-gt-review-luxe-digital.jpg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
